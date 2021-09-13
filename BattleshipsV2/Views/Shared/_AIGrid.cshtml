@@ -1,0 +1,42 @@
+﻿@model GameScreenViewModel
+
+<table style="width: 500px; height:500px;" class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+            <th scope="col">D</th>
+            <th scope="col">E</th>
+            <th scope="col">F</th>
+            <th scope="col">G</th>
+            <th scope="col">H</th>
+            <th scope="col">I</th>
+            <th scope="col">J</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int y = 0; y < 10; y++)
+        {
+            <tr>
+                <th scope="row">@(y + 1)</th>
+                @for (int x = 0; x < 10; x++)
+                {
+                    @switch (Model.AIGrid[x, y])
+                    {
+                        case BattleshipsV2.Data.CellContent.Hit:
+                            <td class="table-danger text-danger"><i class="h5 p-0 m-0 fas fa-fire"></i></td>
+                            break;
+                        case BattleshipsV2.Data.CellContent.Miss:
+                            <td class="table-info text-info"><i class="fas fa-wind"></i></td>
+                            break;
+                        default:
+                            <td class="table-dark text-warning"><i class="fas fa-question"></i></td>
+                            break;
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table> 

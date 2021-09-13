@@ -1,0 +1,105 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-grad {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(77,139,208);
+    background: linear-gradient(130deg, rgba(77,139,208,1) 0%, rgba(255,255,255,1) 47%);
+}
+
+.game-win {
+    background-image: url(../the-office-comedy.gif);
+    background-size: cover;
+    height: 500px;
+}
+
+.game-lose {
+    background-image: url(../terminator2-crush-skull.gif);
+    background-size: cover;
+    height: 500px;
+}
+
+.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-grad-win {
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%)
+}
+
+.btn-grad-win {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad-win:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-grad-lose {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+}
+
+.btn-grad-lose {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad-lose:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

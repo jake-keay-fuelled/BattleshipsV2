@@ -1,0 +1,9 @@
+﻿@model GameScreenViewModel
+
+<div class="game-win d-flex align-items-center justify-content-center rounded">
+    <div class="p-5 d-flex flex-column align-items-center">
+        <h1 class="text-success">You've Won!</h1>
+        <h4 class="text-success">Player won after @Model.Turn turns</h4>
+        <a asp-controller="Home" , asp-action="HandleReturnToIndex" class="mt-3 btn-grad-win">Play Again?</a>
+    </div>
+</div>
