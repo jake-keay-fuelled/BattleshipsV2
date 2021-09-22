@@ -1,0 +1,19 @@
+﻿@model GridViewModel
+
+<form asp-controller="Home" asp-action="PlaceShip" autocomplete="off">
+    <div style="width: 500px;" class="input-group mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="">Place Ship:</span>
+        </div>
+        <select class="custom-select" name="shipType" asp-items="@new SelectList(Model.ValidShips)"></select>
+        <div class="input-group my-2">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Start | End:</span>
+            </div>
+            <input type="text" name="coordA" class="form-control">
+            <input type="text" name="coordB" class="form-control">
+        </div>
+    </div>
+    <button type="submit" class=" mt-2 btn btn-outline-primary btn-block">Place This Ship</button>
+    <a asp-controller="Home" asp-action="PlaceRandomPlayerShips" class="mt-2 btn btn-outline-secondary btn-block">Place Remaining Ships Randomly</a>
+</form>

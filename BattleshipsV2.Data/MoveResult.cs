@@ -7,8 +7,11 @@ namespace BattleshipsV2.Data
     public enum MoveResult
     {
         Success,
+        LastPlayerHitPointTaken,
+        LastAIHitPointTaken,
         InvalidCoords,
+        InvalidSize,
         SpaceIsOccupied,
-        SalvoAlreadyFired
+        AIHasMissed
     }
 }

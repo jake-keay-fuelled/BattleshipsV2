@@ -1,4 +1,4 @@
-﻿@model GameScreenViewModel
+﻿@model GridViewModel
 
 <table style="width: 500px; height:500px;" class="table table-bordered">
     <thead>
@@ -23,16 +23,19 @@
                 <th scope="row">@(y + 1)</th>
                 @for (int x = 0; x < 10; x++)
                 {
-                    @switch (Model.AIGrid[x, y])
+                    @switch (Model.PlayerGrid[x, y])
                     {
-                        case BattleshipsV2.Data.CellContent.Hit:
+                        case CellContent.Hit:
                             <td class="table-danger text-danger"><i class="h5 p-0 m-0 fas fa-fire"></i></td>
                             break;
-                        case BattleshipsV2.Data.CellContent.Miss:
+                        case CellContent.Miss:
                             <td class="table-info text-info"><i class="fas fa-wind"></i></td>
                             break;
+                        case CellContent.Ship:
+                            <td class="table-secondary text-secondary"><i class="fas fa-ship"></i></td>
+                            break;
                         default:
-                            <td class="table-dark text-warning"><i class="fas fa-question"></i></td>
+                            <td class="table-primary text-primary"><i class="fas fa-water"></i></td>
                             break;
                     }
                 }

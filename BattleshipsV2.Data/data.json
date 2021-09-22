@@ -1,0 +1,11 @@
+{
+  "PlayerGrid": null,
+  "AIGrid": null,
+  "PlayerCoords": null,
+  "AICoords": null,
+  "PlayerMoves": null,
+  "AIMoves": null,
+  "PlayerHitpoints": 0,
+  "AIHitpoints": 0,
+  "ValidShips": null
+}

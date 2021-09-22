@@ -26,7 +26,9 @@ namespace BattleshipsV2
         {
             services.AddControllersWithViews();
 
-            services.AddScoped<IJsonData, JsonDataHandler>();
+            services.AddSingleton<IJsonData, JsonData>();
+            services.AddSingleton<IGridData, GridData>();
+            services.AddSingleton<IGameHandler, GameHandler>();
 
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
@@ -37,6 +39,7 @@ namespace BattleshipsV2
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
                 app.UseBrowserLink();
             }
             else
